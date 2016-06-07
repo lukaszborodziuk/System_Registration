@@ -36,7 +36,7 @@ namespace SystemRegistration
                 FileStream stream = new FileStream("registerData.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
                 UserData ud = (UserData)serializer.Deserialize(stream);
 
-                nameRead.Text = ud.Nick;
+                nameRead.Text = ud.Name;
                 accountRead.Text = ud.TypeAccount;
             }
         }
